@@ -1,0 +1,221 @@
+@charset "ISO-8859-1"; 
+
+#headermenu {
+	display: table;
+}
+
+#headermenu div {
+	display:table-cell; 
+	padding-right: 20px;
+}
+
+a:link {
+	color: cornflowerBlue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: indigo;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:active {
+	color: red;
+}
+
+#headermenu a:link {
+	font-size: larger;
+}
+
+.pageheading {
+	color: darkblue;
+}
+
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+}
+
+th {
+	background: darkblue;
+	color: cornsilk;
+	font-size: larger;
+}
+
+table.form {
+	border: 0;
+	padding: 4px;
+	margin: 0 auto;
+	
+}
+
+button {
+	padding: 6px;
+	border-radius: 5px;
+}
+
+button[type=submit] {
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: white;
+	color: green;
+}
+
+input {
+	border: 1px solid;
+	border-radius: 4px;	
+	border-color: green;
+	height: 20px;
+}
+
+.message {
+	font-style: italic;
+	color: blue;
+}
+
+.error {
+	color: red;
+	font-style: italic;
+	margin: 5px;
+}
+
+div.center {
+	text-align: center;
+}
+
+div.book {
+	width: 20%;
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+}
+
+table.book {
+	width: 60%;
+	border: 0;
+	margin: 0 auto;
+}
+
+table.normal {
+	border: 0;
+	margin: 0 auto;
+}
+
+div.book_group {
+	width: 70%; 
+	margin: 0 auto;
+}
+
+div.next-row {
+	clear:both;
+}
+
+img.book-small {
+	width: 128px; 
+}
+
+img.book-large {
+	width: 240px;
+}
+
+#book-title {
+	font-size: large;
+	font-weight: bold;
+}
+
+#author {
+	font-size: large;
+	font-style: italic;
+}
+
+#description {
+	text-align: justify;
+	vertical-align: top;
+}
+
+#search-image {
+	display: inline-block; margin: 20px; width: 10%;
+}
+
+#search-description {
+	display: inline-block; margin: 20px; vertical-align: top; width: 50%;
+	text-align: left;
+}
+
+#search-price {
+	display: inline-block; margin: 20px; vertical-align: top;
+}
+
+.nav {
+font-family: 'Open Sans Condensed', sans-serif;
+background: white;
+text-align: center;
+}
+.nav a {
+text-decoration: none;
+display: block;
+transition: .5s linear;
+}
+.nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.topmenu > li {
+display: inline-block;
+position: relative;
+width: 200px;
+}
+.topmenu > li > a {
+font-weight: bold;
+padding: 10px 30px;
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #1c1c1c;
+border: 1px solid #999;
+}
+.submenu {
+position: absolute;
+left: 3px;
+z-index: 5;
+width: 240px;
+visibility: hidden;
+opacity: 0;
+transform: translateY(10px);
+transition: .5s ease-in-out;
+}
+.submenu li {
+position: relative;
+border: 1px solid #999;
+margin:2px;
+}
+.submenu a {
+background: white;
+color: #1c1c1c;
+text-align: center;
+font-size: 14px;
+letter-spacing: 1px;
+padding: 10px 20px;
+}
+.submenu .submenu {
+position: absolute;
+top: 0;
+left: 200px;
+}
+.nav li:hover > .submenu {
+visibility: visible;
+opacity: 1;
+transform: translateY(0px);
+}
