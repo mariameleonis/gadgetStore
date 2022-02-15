@@ -9,10 +9,10 @@ import com.epam.gadgetStore.exception.DAOException;
 
 public class JDBCCaller {
 
-	public static <R> R tryCallJDBC(String SQLQuery, DAOFunction<R> function) {
+	public static <R> R tryCallJDBC(String sqlQuery, DAOFunction<R> function) {
 		ConnectionPool connectionPool = ConnectionPool.getInstance();
 		Connection connection = connectionPool.takeConnection();
-		try (PreparedStatement statement = connection.prepareStatement(SQLQuery, PreparedStatement.RETURN_GENERATED_KEYS)) {
+		try (PreparedStatement statement = connection.prepareStatement(sqlQuery, PreparedStatement.RETURN_GENERATED_KEYS)) {
 			return function.apply(statement);
 		} catch (SQLException e) {
 	            throw new DAOException(e);        
@@ -21,10 +21,10 @@ public class JDBCCaller {
 		}
 	}
 
-	public static void tryCallJDBC(String SQLQuery, DAOVoidFunction function) {
+	public static void tryCallJDBC(String sqlQuery, DAOVoidFunction function) {
 		ConnectionPool connectionPool = ConnectionPool.getInstance();
 		Connection connection = connectionPool.takeConnection();
-		try (PreparedStatement statement = connection.prepareStatement(SQLQuery, PreparedStatement.RETURN_GENERATED_KEYS)) {
+		try (PreparedStatement statement = connection.prepareStatement(sqlQuery, PreparedStatement.RETURN_GENERATED_KEYS)) {
 			function.apply(statement);
 		} catch (SQLException e) {
             throw new DAOException(e);   
@@ -42,7 +42,4 @@ public class JDBCCaller {
 	public interface DAOVoidFunction {
 		void apply(PreparedStatement statement) throws SQLException;
 	}
-	
-
-
 }
