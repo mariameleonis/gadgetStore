@@ -10,7 +10,7 @@ public class ProductDTO {
 	private String price;
 	private String brandId;
 	private String categoryId;
-	
+
 	public String getId() {
 		return id;
 	}
