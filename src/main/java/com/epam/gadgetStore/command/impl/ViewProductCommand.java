@@ -2,7 +2,7 @@ package com.epam.gadgetStore.command.impl;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.PRODUCT_ATTRIBUTE;
 import static com.epam.gadgetStore.constants.PageNameConstants.*;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.extractLanguageIdFromSession;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 import static com.epam.gadgetStore.util.caller.DAOCaller.tryCallGetByID;

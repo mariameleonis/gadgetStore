@@ -4,10 +4,10 @@ import static com.epam.gadgetStore.constants.AttributeConstants.*;
 import static com.epam.gadgetStore.constants.MessagesConstants.CATEGORY_CREATED_MESSAGE;
 import static com.epam.gadgetStore.constants.MessagesConstants.CATEGORY_UPDATED_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.*;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.CATEGORY_ITEM_TITLE_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.CATEGORY_NAME_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.PARENT_CATEGORY_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.CATEGORY_ITEM_TITLE_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.CATEGORY_NAME_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.PARENT_CATEGORY_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 
 import java.io.IOException;

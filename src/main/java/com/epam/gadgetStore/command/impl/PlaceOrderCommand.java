@@ -26,12 +26,12 @@ import com.epam.gadgetStore.validation.CheckoutFormValidator;
 import static com.epam.gadgetStore.constants.AttributeConstants.*;
 import static com.epam.gadgetStore.constants.MessagesConstants.THANK_YOU_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.*;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ADDRESS_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.CARD_HOLDER_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.CARD_NUMBER_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.EXPIRATION_DATE_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.PHONE_NUMBER_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.SECURITY_CODE_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ADDRESS_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.CARD_HOLDER_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.CARD_NUMBER_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.EXPIRATION_DATE_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.PHONE_NUMBER_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.SECURITY_CODE_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 
 public class PlaceOrderCommand implements Command {

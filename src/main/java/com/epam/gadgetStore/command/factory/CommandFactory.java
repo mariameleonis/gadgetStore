@@ -1,6 +1,6 @@
 package com.epam.gadgetStore.command.factory;
 
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.COMMAND_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.COMMAND_PARAMETER;
 
 import javax.servlet.http.HttpServletRequest;
 

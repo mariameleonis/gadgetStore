@@ -16,7 +16,7 @@ import com.epam.gadgetStore.entity.Order;
 
 import static com.epam.gadgetStore.constants.MessagesConstants.ORDER_UPDATED_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.ORDER_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.*;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 import static com.epam.gadgetStore.util.CommandUtils.*;
 
 public class UpdateOrderCommand implements Command {

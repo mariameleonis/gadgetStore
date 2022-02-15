@@ -2,7 +2,7 @@ package com.epam.gadgetStore.command.impl.admin;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.PRODUCT_ATTRIBUTE;
 import static com.epam.gadgetStore.constants.PageNameConstants.PRODUCT_FORM_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.extractLanguageIdFromSession;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 import static com.epam.gadgetStore.util.CommandUtils.getDataForProductForm;

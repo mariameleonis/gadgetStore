@@ -27,7 +27,7 @@ import static com.epam.gadgetStore.constants.MessagesConstants.PRODUCT_CREATED_M
 import static com.epam.gadgetStore.constants.MessagesConstants.PRODUCT_UPDATED_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.ADMIN_MESSAGE_JSP;
 import static com.epam.gadgetStore.constants.PageNameConstants.PRODUCT_FORM_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.*;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 import static com.epam.gadgetStore.util.CommandUtils.getDataForProductForm;
 

@@ -5,8 +5,8 @@ import static com.epam.gadgetStore.constants.MessagesConstants.USER_LOGIN_BLOCKE
 import static com.epam.gadgetStore.constants.MessagesConstants.USER_LOGIN_FAILED_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.ADMIN_INDEX_JSP;
 import static com.epam.gadgetStore.constants.PageNameConstants.CUSTOMER_LOGIN_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.EMAIL_PARAMETER;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.PASSWORD_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.EMAIL_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.PASSWORD_PARAMETER;
 import static com.epam.gadgetStore.enums.UserRole.*;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 

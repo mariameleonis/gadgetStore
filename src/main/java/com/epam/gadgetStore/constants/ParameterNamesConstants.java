@@ -1,6 +1,6 @@
 package com.epam.gadgetStore.constants;
 
-public final class RequestParameterNamesConstants {
+public final class ParameterNamesConstants {
 
 	public static final String COMMAND_PARAMETER = "command";
 	public static final String ID_PARAMETER = "id";
@@ -27,7 +27,7 @@ public final class RequestParameterNamesConstants {
 	public static final String CATEGORY_PARAMETER = "category";
 	public static final String BRAND_PARAMETER = "brand";
 	
-	private RequestParameterNamesConstants() {
+	private ParameterNamesConstants() {
 
 	}
 }

@@ -2,7 +2,7 @@ package com.epam.gadgetStore.command.impl.admin;
 
 import static com.epam.gadgetStore.constants.MessagesConstants.*;
 import static com.epam.gadgetStore.constants.PageNameConstants.*;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.*;
 import static com.epam.gadgetStore.util.caller.DAOCaller.tryCallGetByID;
 

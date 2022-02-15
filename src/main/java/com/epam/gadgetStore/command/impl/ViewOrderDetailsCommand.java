@@ -18,7 +18,7 @@ import com.epam.gadgetStore.entity.User;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.*;
 import static com.epam.gadgetStore.constants.PageNameConstants.ORDER_DETAILS_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.*;
 
 public class ViewOrderDetailsCommand implements Command {

@@ -14,7 +14,7 @@ import com.epam.gadgetStore.entity.Product;
 import com.epam.gadgetStore.shoppingcart.ShoppingCart;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.SHOPPING_CART_ATTRIBUTE;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.extractLanguageIdFromSession;
 
 

@@ -1,7 +1,7 @@
 package com.epam.gadgetStore.command.impl;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.SHOPPING_CART_ATTRIBUTE;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 
 import java.io.IOException;
 import java.sql.SQLException;

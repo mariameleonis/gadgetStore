@@ -2,7 +2,7 @@ package com.epam.gadgetStore.command.impl;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.LANGUAGE_ATTRIBUTE;
 import static com.epam.gadgetStore.constants.AttributeConstants.LANGUAGE_ID_ATTRIBUTE;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.LANGUAGE_TO_CHANGE_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.LANGUAGE_TO_CHANGE_PARAMETER;
 
 import java.io.IOException;
 import java.sql.SQLException;

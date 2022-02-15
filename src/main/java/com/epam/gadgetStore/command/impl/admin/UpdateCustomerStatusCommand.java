@@ -2,7 +2,7 @@ package com.epam.gadgetStore.command.impl.admin;
 
 import static com.epam.gadgetStore.constants.MessagesConstants.CUSTOMER_STATUS_UPDATED_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.ADMIN_MESSAGE_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 
 import java.io.IOException;

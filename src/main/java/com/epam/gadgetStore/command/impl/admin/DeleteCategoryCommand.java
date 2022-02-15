@@ -17,7 +17,7 @@ import com.epam.gadgetStore.exception.DAOException;
 
 import static com.epam.gadgetStore.constants.MessagesConstants.*;
 import static com.epam.gadgetStore.constants.PageNameConstants.ADMIN_MESSAGE_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.ID_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.ID_PARAMETER;
 import static com.epam.gadgetStore.util.CommandUtils.*;;
 
 public class DeleteCategoryCommand implements Command {

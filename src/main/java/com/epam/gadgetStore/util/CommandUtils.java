@@ -2,7 +2,7 @@ package com.epam.gadgetStore.util;
 
 import static com.epam.gadgetStore.constants.AttributeConstants.*;
 import static com.epam.gadgetStore.constants.PageNameConstants.ERROR_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.*;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 import java.io.IOException;
 import java.util.ArrayList;

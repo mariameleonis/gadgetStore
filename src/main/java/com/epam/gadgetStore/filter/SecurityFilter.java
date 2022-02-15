@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 import static com.epam.gadgetStore.constants.AttributeConstants.*;
 import static com.epam.gadgetStore.constants.MessagesConstants.USER_LOGIN_REQUIRED_MESSAGE;
 import static com.epam.gadgetStore.constants.PageNameConstants.CUSTOMER_LOGIN_JSP;
-import static com.epam.gadgetStore.constants.RequestParameterNamesConstants.COMMAND_PARAMETER;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.COMMAND_PARAMETER;
 import static com.epam.gadgetStore.enums.UserRole.*;
 import static com.epam.gadgetStore.util.CommandUtils.forwardToPage;
 
