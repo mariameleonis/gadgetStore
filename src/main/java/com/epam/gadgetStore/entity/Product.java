@@ -1,9 +1,8 @@
- package com.epam.gadgetStore.entity;
+package com.epam.gadgetStore.entity;
 
 import java.util.Base64;
 
 public class Product extends Entity {
-
 	private String name;
 	private String description;
 	private float price;
@@ -11,13 +10,13 @@ public class Product extends Entity {
 	private String base64Image;
 	private Brand brand;
 	private Category category;
-		
+
 	public Product(Long id) {
 		super(id);
 	}
 
 	public Product() {
-		
+
 	}
 
 	public Brand getBrand() {
@@ -76,7 +75,7 @@ public class Product extends Entity {
 	public void setBase64Image(String base64Image) {
 		this.base64Image = base64Image;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -88,15 +87,15 @@ public class Product extends Entity {
 	@Override
 	public boolean equals(Object obj) {
 		if (obj == this) {
-	        return true;
-	    }
-		
-	    if (obj == null || obj.getClass() != this.getClass()) {
-	        return false;
-	    }
-	    
-	    Product otherProduct = (Product) obj;
-	    if (getId() == null) {
+			return true;
+		}
+
+		if (obj == null || obj.getClass() != this.getClass()) {
+			return false;
+		}
+
+		Product otherProduct = (Product) obj;
+		if (getId() == null) {
 			if (otherProduct.getId() != null)
 				return false;
 		} else if (!getId().equals(otherProduct.getId()))
@@ -106,9 +105,6 @@ public class Product extends Entity {
 
 	@Override
 	public String toString() {
-		return "Product [id="+  super.getId() + ", name=" + name + ", price=" + price + "]";
+		return "Product [id=" + super.getId() + ", name=" + name + ", price=" + price + "]";
 	}
-
-
-
 }

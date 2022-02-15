@@ -1,7 +1,6 @@
 package com.epam.gadgetStore.entity;
 
 public class Brand extends Entity {
-
 	private String name;
 
 	public Brand(String name) {
@@ -23,5 +22,4 @@ public class Brand extends Entity {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 }

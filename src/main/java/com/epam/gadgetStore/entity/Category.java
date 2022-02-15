@@ -3,23 +3,22 @@ package com.epam.gadgetStore.entity;
 import java.util.List;
 
 public class Category extends Entity {
-	
 	private Long parentId;
 	private String name;
-	private String itemTitle;	
+	private String itemTitle;
 	private Long languageId;
 	private List<Category> subcategories;
-	
+
 	public Category() {
-		
+
 	}
-	
+
 	public Category(String name, String itemTitle) {
 		super();
 		this.name = name;
 		this.itemTitle = itemTitle;
 	}
-	
+
 	public Category(Long id, Long parentId) {
 		super(id);
 		this.parentId = parentId;
@@ -32,12 +31,15 @@ public class Category extends Entity {
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getItemTitle() {
 		return itemTitle;
 	}
+
 	public void setItemTitle(String itemTitle) {
 		this.itemTitle = itemTitle;
 	}
@@ -65,8 +67,5 @@ public class Category extends Entity {
 	public void setSubcategories(List<Category> subcategories) {
 		this.subcategories = subcategories;
 	}
-
-	
-		
 
 }
