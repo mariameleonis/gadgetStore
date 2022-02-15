@@ -26,8 +26,34 @@ public final class ParameterNamesConstants {
 	public static final String PRODUCT_IMAGE_PARAMETER = "productImage";
 	public static final String CATEGORY_PARAMETER = "category";
 	public static final String BRAND_PARAMETER = "brand";
-	
-	private ParameterNamesConstants() {
-
-	}
+	public static final String BRAND_ID_COLUMN_LABEL = "brand_id";
+	public static final String BRAND_NAME_COLUMN_LABEL = "brand_name";
+	public static final String CATEGORY_ID_COLUMN_LABEL = "category_id";
+	public static final String CATEGORY_NAME_COLUMN_LABEL = "category_name";
+	public static final String CATEGORY_ITEM_TITLE_COLUMN_LABEL = "item_title";
+	public static final String CATEGORY_PARENT_ID_COLUMN_LABEL = "parent_id";
+	public static final String CATEGORY_LANGUAGE_ID_COLUMN_LABEL = "language_id";
+	public static final String PRODUCT_ID_COLUMN_LABEL = "product_id";
+	public static final String PRODUCT_NAME_COLUMN_LABEL = "name";
+	public static final String PRODUCT_DESCRIPTION_COLUMN_LABEL = "description";
+	public static final String PRODUCT_PRICE_COLUMN_LABEL = "price";
+	public static final String PRODUCT_IMAGE_COLUMN_LABEL = "image";
+	public static final String LANGUAGE_ID_COLUMN_LABEL = "language_id";
+	public static final String LANGUAGE_NAME_COLUMN_LABEL = "language_name";
+	public static final String ORDER_ID_COLUMN_LABEL = "id";
+	public static final String ORDER_TOTAL_COLUMN_LABEL = "total";
+	public static final String ORDER_DATE_COLUMN_LABEL = "placedAt";
+	public static final String ORDER_ADDRESS_COLUMN_LABEL = "shipping_address";
+	public static final String ORDER_PHONE_COLUMN_LABEL = "shipping_phone";
+	public static final String ORDER_STATUS_COLUMN_LABEL = "status";
+	public static final String USER_ID_COLUMN_LABEL = "user_id";
+	public static final String USER_FIRSTNAME_COLUMN_LABEL = "firstname";
+	public static final String USER_LASTNAME_COLUMN_LABEL = "lastname";
+	public static final String ORDER_ITEM_ID_COLUMN_LABEL = "id";
+	public static final String ORDER_ITEM_ORDER_ID_COLUMN_LABEL = "order_id";
+	public static final String ORDER_ITEM_QUANTITY_COLUMN_LABEL = "quantity";
+	public static final String ORDER_ITEM_PRICE_COLUMN_LABEL = "selling_price";
+	public static final String ORDER_ITEM_SUBTOTAL_COLUMN_LABEL = "subtotal";
+		
+	private ParameterNamesConstants() {}
 }
