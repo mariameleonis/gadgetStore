@@ -34,22 +34,22 @@ abstract class AbstractBaseDAO<E> {
 		return entities;
 	}
 
-	E getByParameters(String SQLQuery, Object... parameters) {
-		return tryCallJDBC(SQLQuery, statement -> {
+	E getByParameters(String sqlQuery, Object... parameters) {
+		return tryCallJDBC(sqlQuery, statement -> {
 			populatePreparedStatement(statement, parameters);
 			return executeStatementAndParseResultSet(statement);
 		});
 	}
 
-	List<E> getAll(String SQLQuery, Object... parameters) {
-		return tryCallJDBC(SQLQuery, statement -> {
+	List<E> getAll(String sqlQuery, Object... parameters) {
+		return tryCallJDBC(sqlQuery, statement -> {
 			populatePreparedStatement(statement, parameters);
 			return executeStatementAndParseResultSetToList(statement);
 		});
 	}
 
-	Long executeUpdateReturnKey(String SQLQuery, Object... parameters) {
-		return tryCallJDBC(SQLQuery, statement -> {
+	Long executeUpdateReturnKey(String sqlQuery, Object... parameters) {
+		return tryCallJDBC(sqlQuery, statement -> {
 			populatePreparedStatement(statement, parameters);
 			statement.executeUpdate();
 			try (ResultSet keys = statement.getGeneratedKeys()) {
@@ -57,14 +57,14 @@ abstract class AbstractBaseDAO<E> {
 					return keys.getLong(1);
 				} else {
 					throw new UnsupportedOperationException(
-							"Cannot return generated keys for specified SQLQuery parameter");
+							"Cannot return generated keys for specified sqlQuery parameter");
 				}
 			}
 		});
 	}
 
-	void executeUpdate(String SQLQuery, Object... parameters) {
-		tryCallJDBC(SQLQuery, statement -> {
+	void executeUpdate(String sqlQuery, Object... parameters) {
+		tryCallJDBC(sqlQuery, statement -> {
 			populatePreparedStatement(statement, parameters);
 			statement.executeUpdate();
 		});
