@@ -7,7 +7,6 @@ public class CategoryErrorStorage {
 	private boolean isDuplicateName;
 	
 	public CategoryErrorStorage(Long languageId) {
-		super();
 		this.languageId = languageId;
 		this.isWrongName = false;
 		this.isWrongItemTitle = false;
