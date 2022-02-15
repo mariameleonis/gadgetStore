@@ -10,6 +10,7 @@ import java.util.List;
 import com.epam.gadgetStore.dao.ProductDAO;
 import com.epam.gadgetStore.dao.factory.DAOFactory;
 import com.epam.gadgetStore.entity.Product;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 public class ProductDAOImpl extends AbstractBaseDAO<Product> implements ProductDAO {
 	private static final String ADD_PRODUCT = "INSERT INTO PRODUCT (category_id, brand_id, name, description, price, image) "
@@ -89,11 +90,11 @@ public class ProductDAOImpl extends AbstractBaseDAO<Product> implements ProductD
 	@Override
 	Product parseResultSet(ResultSet resultSet) throws SQLException {
 		Product product = new Product();
-		product.setId(resultSet.getLong("product_id"));
-		product.setName(resultSet.getString("name"));
-		product.setDescription(resultSet.getString("description"));
-		product.setPrice(resultSet.getFloat("price"));
-		product.setImage(resultSet.getBytes("image"));
+		product.setId(resultSet.getLong(PRODUCT_ID_COLUMN_LABEL));
+		product.setName(resultSet.getString(PRODUCT_NAME_COLUMN_LABEL));
+		product.setDescription(resultSet.getString(PRODUCT_DESCRIPTION_COLUMN_LABEL));
+		product.setPrice(resultSet.getFloat(PRODUCT_PRICE_COLUMN_LABEL));
+		product.setImage(resultSet.getBytes(PRODUCT_IMAGE_COLUMN_LABEL));
 		product.setCategory(categoryDAO.parseResultSet(resultSet));
 		product.setBrand(brandDAO.parseResultSet(resultSet));
 		return product;

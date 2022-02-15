@@ -7,6 +7,7 @@ import java.util.List;
 import com.epam.gadgetStore.dao.OrderDAO;
 import com.epam.gadgetStore.entity.Order;
 import com.epam.gadgetStore.entity.User;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 public class OrderDAOImpl extends AbstractBaseDAO<Order> implements OrderDAO {
 
@@ -48,16 +49,16 @@ public class OrderDAOImpl extends AbstractBaseDAO<Order> implements OrderDAO {
 	@Override
 	Order parseResultSet(ResultSet resultSet) throws SQLException {
 		Order order = new Order();
-		order.setId(resultSet.getLong("id"));
-		order.setTotal(resultSet.getFloat("total"));
-		order.setOrderDate(resultSet.getTimestamp("placedAt"));
-		order.setShippingAddress(resultSet.getString("shipping_address"));
-		order.setShippingPhone(resultSet.getString("shipping_phone"));
-		order.setStatus(resultSet.getString("status"));
+		order.setId(resultSet.getLong(ORDER_ID_COLUMN_LABEL));
+		order.setTotal(resultSet.getFloat(ORDER_TOTAL_COLUMN_LABEL));
+		order.setOrderDate(resultSet.getTimestamp(ORDER_DATE_COLUMN_LABEL));
+		order.setShippingAddress(resultSet.getString(ORDER_ADDRESS_COLUMN_LABEL));
+		order.setShippingPhone(resultSet.getString(ORDER_PHONE_COLUMN_LABEL));
+		order.setStatus(resultSet.getString(ORDER_STATUS_COLUMN_LABEL));
 		User user = new User();
-		user.setId(resultSet.getLong("user_id"));
-		user.setFirstName(resultSet.getString("firstname"));
-		user.setLastName(resultSet.getString("lastname"));
+		user.setId(resultSet.getLong(USER_ID_COLUMN_LABEL));
+		user.setFirstName(resultSet.getString(USER_FIRSTNAME_COLUMN_LABEL));
+		user.setLastName(resultSet.getString(USER_LASTNAME_COLUMN_LABEL));
 		order.setUser(user);
 		return order;
 	}

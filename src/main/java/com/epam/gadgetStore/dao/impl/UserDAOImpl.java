@@ -9,7 +9,7 @@ import com.epam.gadgetStore.entity.User;
 public class UserDAOImpl extends AbstractBaseDAO<User> implements UserDAO {
 	private static final String ADD_USER = "INSERT INTO USER (firstname, lastname, email, password, isAdmin, phoneNumber) VALUES (?,?,?,?,?,?)";
 	private static final String GET_ALL_CUSTOMERS = "SELECT * FROM user WHERE isAdmin = false";
-	private static final String GET_USER_BY_ID = "SELECT * FROM user WHERE ID = ?";
+	private static final String GET_USER_BY_ID = "SELECT * FROM user WHERE id = ?";
 	private static final String GET_USER_BY_EMAIL = "SELECT * FROM user WHERE email = ?";
 	private static final String GET_USER_BY_PHONE = "SELECT * FROM user WHERE phoneNumber = ?";
 	private static final String CHECK_LOGIN = "SELECT * FROM user WHERE email = ? AND password = ?";

@@ -8,6 +8,7 @@ import com.epam.gadgetStore.dao.OrderItemDAO;
 import com.epam.gadgetStore.dao.factory.DAOFactory;
 import com.epam.gadgetStore.entity.OrderItem;
 import com.epam.gadgetStore.entity.Product;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 public class OrderItemDAOImpl extends AbstractBaseDAO<OrderItem> implements OrderItemDAO {
 	private final ProductDAOImpl productDAO = (ProductDAOImpl) DAOFactory.PRODUCT_DAO.getDAO();
@@ -28,11 +29,11 @@ public class OrderItemDAOImpl extends AbstractBaseDAO<OrderItem> implements Orde
 	@Override
 	OrderItem parseResultSet(ResultSet resultSet) throws SQLException {
 		OrderItem orderItem = new OrderItem();
-		orderItem.setId(resultSet.getLong("id"));
-		orderItem.setOrderId(resultSet.getLong("order_id"));
-		orderItem.setQuantity(resultSet.getInt("quantity"));
-		orderItem.setSellingPrice(resultSet.getFloat("selling_price"));
-		orderItem.setSubtotal(resultSet.getFloat("subtotal"));
+		orderItem.setId(resultSet.getLong(ORDER_ITEM_ID_COLUMN_LABEL));
+		orderItem.setOrderId(resultSet.getLong(ORDER_ITEM_ORDER_ID_COLUMN_LABEL));
+		orderItem.setQuantity(resultSet.getInt(ORDER_ITEM_QUANTITY_COLUMN_LABEL));
+		orderItem.setSellingPrice(resultSet.getFloat(ORDER_ITEM_PRICE_COLUMN_LABEL));
+		orderItem.setSubtotal(resultSet.getFloat(ORDER_ITEM_SUBTOTAL_COLUMN_LABEL));
 		Product product = productDAO.parseResultSet(resultSet);
 		orderItem.setProduct(product);
 		return orderItem;

@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.epam.gadgetStore.dao.BrandDAO;
 import com.epam.gadgetStore.entity.Brand;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 public class BrandDAOImpl extends AbstractBaseDAO<Brand> implements BrandDAO {
 	private static final String GET_BRAND_BY_ID = "SELECT brand.id AS brand_id, brand.name AS brand_name  FROM brand WHERE id = ?";
@@ -24,8 +25,8 @@ public class BrandDAOImpl extends AbstractBaseDAO<Brand> implements BrandDAO {
 	@Override
 	Brand parseResultSet(ResultSet resultSet) throws SQLException {
 		Brand brand = new Brand();
-		brand.setId(resultSet.getLong("brand_id"));
-		brand.setName(resultSet.getString("brand_name"));
+		brand.setId(resultSet.getLong(BRAND_ID_COLUMN_LABEL));
+		brand.setName(resultSet.getString(BRAND_NAME_COLUMN_LABEL));
 		return brand;
 	}
 }

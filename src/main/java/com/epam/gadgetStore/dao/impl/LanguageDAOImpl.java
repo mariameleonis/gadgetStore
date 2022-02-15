@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.epam.gadgetStore.dao.LanguageDAO;
 import com.epam.gadgetStore.entity.Language;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 public class LanguageDAOImpl extends AbstractBaseDAO<Language> implements LanguageDAO {
 	private static final String SELECT_ALL_LANGUAGES = "SELECT id as language_id, name as language_name FROM language";
@@ -14,8 +15,8 @@ public class LanguageDAOImpl extends AbstractBaseDAO<Language> implements Langua
 	@Override
 	Language parseResultSet(ResultSet resultSet) throws SQLException {
 		Language language = new Language();
-		language.setId(resultSet.getLong("language_id"));
-		language.setName(resultSet.getString("language_name"));
+		language.setId(resultSet.getLong(LANGUAGE_ID_COLUMN_LABEL));
+		language.setName(resultSet.getString(LANGUAGE_NAME_COLUMN_LABEL));
 		return language;
 	}
 

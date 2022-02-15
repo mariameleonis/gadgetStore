@@ -6,6 +6,7 @@ import java.util.List;
 import com.epam.gadgetStore.dao.CategoryDAO;
 import com.epam.gadgetStore.dto.CategoryDTO;
 import com.epam.gadgetStore.entity.Category;
+import static com.epam.gadgetStore.constants.ParameterNamesConstants.*;
 
 public class CategoryDAOImpl extends AbstractBaseDAO<Category> implements CategoryDAO {
 	private static final String GET_ALL_CATEGORIES_LOCALIZED_BY_ID = "SELECT * FROM category_view WHERE category_id = ?";
@@ -67,11 +68,11 @@ public class CategoryDAOImpl extends AbstractBaseDAO<Category> implements Catego
 	@Override
 	Category parseResultSet(ResultSet resultSet) throws SQLException {
 		Category category = new Category();
-		category.setId(resultSet.getLong("category_id"));
-		category.setName(resultSet.getString("category_name"));
-		category.setItemTitle(resultSet.getString("item_title"));
-		category.setParentId(resultSet.getLong("parent_id"));
-		category.setLanguageId(resultSet.getLong("language_id"));
+		category.setId(resultSet.getLong(CATEGORY_ID_COLUMN_LABEL));
+		category.setName(resultSet.getString(CATEGORY_NAME_COLUMN_LABEL));
+		category.setItemTitle(resultSet.getString(CATEGORY_ITEM_TITLE_COLUMN_LABEL));
+		category.setParentId(resultSet.getLong(CATEGORY_PARENT_ID_COLUMN_LABEL));
+		category.setLanguageId(resultSet.getLong(CATEGORY_LANGUAGE_ID_COLUMN_LABEL));
 		return category;
 	}
 }
