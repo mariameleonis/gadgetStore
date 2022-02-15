@@ -12,31 +12,13 @@ public class BrandDAOImpl extends AbstractBaseDAO<Brand> implements BrandDAO {
 	private static final String SELECT_ALL_BRANDS = "SELECT brand.id AS brand_id, brand.name AS brand_name FROM brand";
 
 	@Override
-	public Brand getById(Long id){
+	public Brand getById(Long id) {
 		return getByParameters(GET_BRAND_BY_ID, id);
 	}
 
 	@Override
-	public List<Brand> getAll(){
+	public List<Brand> getAll() {
 		return getAll(SELECT_ALL_BRANDS);
-	}
-
-	@Override
-	public void add(Brand e) {
-		
-
-	}
-
-	@Override
-	public void update(Brand e) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void delete(Long id) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -46,5 +28,4 @@ public class BrandDAOImpl extends AbstractBaseDAO<Brand> implements BrandDAO {
 		brand.setName(resultSet.getString("brand_name"));
 		return brand;
 	}
-
 }
