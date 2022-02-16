@@ -43,7 +43,7 @@ public final class ConnectionPool {
     	this.driverName = properties.getString(DB_DRIVER);
         this.url = properties.getString(DB_URL);
         this.user = properties.getString(DB_USER);
-        this.password = System.getenv().get(properties.getString(DB_PASSWORD));       
+        this.password = System.getenv(properties.getString(DB_PASSWORD));  
     }
     
     private void loadDrivers() {
