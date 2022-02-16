@@ -46,4 +46,31 @@ public class OrderItem extends Entity {
 	public void setSubtotal(float subtotal) {
 		this.subtotal = subtotal;
 	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this) {
+			return true;
+		}
+
+		if (obj == null || obj.getClass() != this.getClass()) {
+			return false;
+		}
+
+		OrderItem otherOrderItem = (OrderItem) obj;
+		if (getId() == null) {
+			if (otherOrderItem.getId() != null)
+				return false;
+		} else if (!getId().equals(otherOrderItem.getId()))
+			return false;
+		return true;
+	}
 }

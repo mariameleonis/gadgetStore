@@ -57,4 +57,31 @@ public class Order extends Entity {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this) {
+			return true;
+		}
+
+		if (obj == null || obj.getClass() != this.getClass()) {
+			return false;
+		}
+
+		Order otherOrder = (Order) obj;
+		if (getId() == null) {
+			if (otherOrder.getId() != null)
+				return false;
+		} else if (!getId().equals(otherOrder.getId()))
+			return false;
+		return true;
+	}
 }
